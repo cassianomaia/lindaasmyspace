@@ -10,18 +10,13 @@ linda.universe._out(("MicroBlog", blog))
 
 
 class Blog(Resource):
-    def get(self, name):
-
-        return 0
-
-    def post(self, name):
+    def post(self, user):
         parser = reqparse.RequestParser()
         parser.add_argument("topico")
         parser.add_argument("mensagem")
         args = parser.parse_args()
-
-    def delete(self, name):
-        return 0
+        blog._out((user, args["topico"], args["mensagem"]))
+        return 201
 
 
 api.add_resource(Blog, "/blog/<string:user>")
