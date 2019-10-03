@@ -35,7 +35,12 @@ class Blog(Resource):
         return 201
 
     def delete(self, user):
-        return 0
+        parser = reqparse.RequestParser()
+        parser.add_argument("topico")
+        parser.add_argument("mensagem")
+        args = parser.parse_args()
+        blog._in((user, args["topico"], args["mensagem"]))
+        return "Mensagem deletada", 200
 
 api.add_resource(Blog, "/blog/<string:user>")
 app.run(debug=True)
