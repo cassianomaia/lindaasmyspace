@@ -1,4 +1,40 @@
-# lindaasmyspace
-Parte1: desenvolva um sistema em python que implemente uma espaço de dados compartilhado persistente, nos moldes do Linda Tuplespace (com as operações in, rd e out) que permita a implementação de um mini-blog com postagens de conteúdos por tópicos, sua leitura por tópicos e a retirada da mensagem somente por quem postou.
+# Projeto 1 - Sistemas Distribuidos
+Esse projeto tem o objetivo de implementar um espaço persistente de dados compartilhado, nos moldes do Linda Tuplespace, com as seguintes funcionalidades:
+- Operação in: Utilizada para remover uma postagem de determinado tópico
+- Operação rd: Utilizada para ler as postagens de determinado usuário sobre um tópico
+- Operação out: Utilizada para realizar as postagens no blog
 
-Parte 2: escreva um wrapper usando REST api neste sistema que permita a conexão de clientes remotos a este microblog se conectarem  através de REST. 
+O projeto conta também com uma api rest, permitindo assim que as mensagens sejam enviadas para o blog através de JSON.
+
+### Utilização
+Para executar o projeto você deve clonar o repositório e executar os seguintes comandos:
+```sh
+$ cd lindaasmyspace
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ python startServer.py
+```
+Após esses passos você terá o servidor rodando em sua máquina local, caso queira modificar o caminho de acesso, basta alterar o arquivo ConstCS.py. Para testar o funcionamento do servidor, basta executar o comando:
+```sh
+$ python example.py
+```
+
+### Testando a API
+Para testar a API recomendamos que você utilize algum software de teste, iremos utilizar o [Insomnia REST Client](https://insomnia.rest/).
+- Em um terminal execute o seguinte comando para iniciar o servidor:
+```sh
+$ python startServer.py
+```
+- Em outro terminal execute o seguinte comando para iniciar a API:
+```sh
+$ python app.py
+```
+
+Agora, dentro do Insomnia os testes são feitos da seguinte forma:
+- GET
+
+- POST
+
+- DELETE
+
