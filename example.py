@@ -14,8 +14,6 @@ blog._out(("palmeirense","flamenguista","Jaja passaremos voces"))
 blog._out(("palmeirense","corinthiano","Quem eh Gabigol perto de Dudu"))
 
 t1 = blog._rd(("palmeirense","corinthiano",str))
-# t2 = blog._rd(("alice","gtcn",str))
-# t3 = blog._rd(("bob","gtcn",str))
 for t in t1:
     print(t)
 
