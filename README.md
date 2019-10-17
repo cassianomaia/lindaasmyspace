@@ -38,3 +38,16 @@ Agora, dentro do Insomnia os testes são feitos da seguinte forma:
 
 - DELETE
 
+### Organização dos arquivos
+- ``/linda``: Pasta contendo os arquivos necessários para implementar o espaço de dados compartilhado, sendo eles:
+        - ``init.py``:
+        - ``server.py``:
+        - ``utils.py``:
+- ``app.py``:Arquivo contendo a especificação da API em Flask
+- ``example.py``: Exemplo de publicação e leitura do espaço de dados compartilhado 
+- ``startServer.py``: Arquivo de inicialização do servidor
+- ``constCS.py``: Arquivo para especificar o endereço e porta do nosso servidor
+----------------------------------------------------------------------
+**Projeto realizado pelos alunos:**
+**Cassiano Maia - 726507**
+**Rodrigo Pesse de Abreu - 726588**
