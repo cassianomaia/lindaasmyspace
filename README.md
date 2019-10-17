@@ -33,11 +33,11 @@ $ python app.py
 
 Agora, dentro do Insomnia os testes são feitos da seguinte forma:
 - GET
-
+![Get testado utilizando Insomnia](https://github.com/cassianomaia/lindaasmyspace/blob/master/screenshots/get.png)
 - POST
-
+![Post testado utilizando Insomnia](https://github.com/cassianomaia/lindaasmyspace/blob/master/screenshots/post.png)
 - DELETE
-
+![Delete testado utilizando Insomnia](https://github.com/cassianomaia/lindaasmyspace/blob/master/screenshots/delete.png)
 ### Organização dos arquivos
 - ``/linda``: Pasta contendo os arquivos necessários para implementar o espaço de dados compartilhado, sendo eles:
         - ``init.py``: Arquivo com a classe do espaço de dados compartilhado
