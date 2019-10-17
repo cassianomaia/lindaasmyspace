@@ -57,6 +57,7 @@ class TupleSpace:
         # Formando a tupla a enviar em formato string
         msg_send = utils.tuple_to_bin((publisher, topic, type_return), "rd")
         s.send(msg_send)
+        s.settimeout(5)
         tuple_list_bin = b''
         r = b''
         while r.decode() != ".":
